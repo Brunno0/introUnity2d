@@ -32,6 +32,10 @@ public class Personagem : MonoBehaviour{
         // define a variável isJumping como true para evitar múltiplos pulos simultâneos
         isJumping = true;
     }
+
+     if(Input.GetMouseButtonDown(1)){
+                speed *= -1;
+        }
 }
  void OnCollisionEnter2D(Collision2D colisor) {
     // verifica se o objeto colidiu com uma camada camada 8 
